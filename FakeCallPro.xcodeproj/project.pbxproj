@@ -8,20 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		9DA5D2FC22209C15001C9933 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5D2FB22209C15001C9933 /* AppDelegate.swift */; };
-		9DA5D2FE22209C15001C9933 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5D2FD22209C15001C9933 /* ViewController.swift */; };
 		9DA5D30122209C15001C9933 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA5D2FF22209C15001C9933 /* Main.storyboard */; };
 		9DA5D30322209C16001C9933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA5D30222209C16001C9933 /* Assets.xcassets */; };
 		9DA5D30622209C16001C9933 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA5D30422209C16001C9933 /* LaunchScreen.storyboard */; };
+		9DA5D30E2221DD1C001C9933 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5D30D2221DD1C001C9933 /* MainVC.swift */; };
+		9DA5D3102221E815001C9933 /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5D30F2221E815001C9933 /* SettingsCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9DA5D2F822209C15001C9933 /* FakeCallPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FakeCallPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DA5D2FB22209C15001C9933 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9DA5D2FD22209C15001C9933 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		9DA5D30022209C15001C9933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DA5D30222209C16001C9933 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DA5D30522209C16001C9933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DA5D30722209C16001C9933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DA5D30D2221DD1C001C9933 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		9DA5D30F2221E815001C9933 /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,8 +57,9 @@
 			isa = PBXGroup;
 			children = (
 				9DA5D2FB22209C15001C9933 /* AppDelegate.swift */,
-				9DA5D2FD22209C15001C9933 /* ViewController.swift */,
+				9DA5D30F2221E815001C9933 /* SettingsCell.swift */,
 				9DA5D2FF22209C15001C9933 /* Main.storyboard */,
+				9DA5D30D2221DD1C001C9933 /* MainVC.swift */,
 				9DA5D30222209C16001C9933 /* Assets.xcassets */,
 				9DA5D30422209C16001C9933 /* LaunchScreen.storyboard */,
 				9DA5D30722209C16001C9933 /* Info.plist */,
@@ -135,8 +138,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9DA5D2FE22209C15001C9933 /* ViewController.swift in Sources */,
 				9DA5D2FC22209C15001C9933 /* AppDelegate.swift in Sources */,
+				9DA5D30E2221DD1C001C9933 /* MainVC.swift in Sources */,
+				9DA5D3102221E815001C9933 /* SettingsCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,6 +287,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XLRLT47KL;
 				INFOPLIST_FILE = FakeCallPro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -300,6 +305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XLRLT47KL;
 				INFOPLIST_FILE = FakeCallPro/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
