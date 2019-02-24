@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D70476F222330D700A1A717 /* TimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D70476E222330D700A1A717 /* TimeVC.swift */; };
 		9DA5D2FC22209C15001C9933 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5D2FB22209C15001C9933 /* AppDelegate.swift */; };
 		9DA5D30122209C15001C9933 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA5D2FF22209C15001C9933 /* Main.storyboard */; };
 		9DA5D30322209C16001C9933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA5D30222209C16001C9933 /* Assets.xcassets */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D70476E222330D700A1A717 /* TimeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeVC.swift; sourceTree = "<group>"; };
 		9DA5D2F822209C15001C9933 /* FakeCallPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FakeCallPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DA5D2FB22209C15001C9933 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DA5D30022209C15001C9933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -37,6 +39,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D70476C2223309900A1A717 /* Main Settings */ = {
+			isa = PBXGroup;
+			children = (
+				9DA5D30F2221E815001C9933 /* SettingsCell.swift */,
+				9DA5D30D2221DD1C001C9933 /* MainVC.swift */,
+			);
+			path = "Main Settings";
+			sourceTree = "<group>";
+		};
+		9D70476D222330BA00A1A717 /* TimeVC */ = {
+			isa = PBXGroup;
+			children = (
+				9D70476E222330D700A1A717 /* TimeVC.swift */,
+			);
+			path = TimeVC;
+			sourceTree = "<group>";
+		};
 		9DA5D2EF22209C15001C9933 = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +75,10 @@
 		9DA5D2FA22209C15001C9933 /* FakeCallPro */ = {
 			isa = PBXGroup;
 			children = (
+				9D70476D222330BA00A1A717 /* TimeVC */,
+				9D70476C2223309900A1A717 /* Main Settings */,
 				9DA5D2FB22209C15001C9933 /* AppDelegate.swift */,
-				9DA5D30F2221E815001C9933 /* SettingsCell.swift */,
 				9DA5D2FF22209C15001C9933 /* Main.storyboard */,
-				9DA5D30D2221DD1C001C9933 /* MainVC.swift */,
 				9DA5D30222209C16001C9933 /* Assets.xcassets */,
 				9DA5D30422209C16001C9933 /* LaunchScreen.storyboard */,
 				9DA5D30722209C16001C9933 /* Info.plist */,
@@ -141,6 +160,7 @@
 				9DA5D2FC22209C15001C9933 /* AppDelegate.swift in Sources */,
 				9DA5D30E2221DD1C001C9933 /* MainVC.swift in Sources */,
 				9DA5D3102221E815001C9933 /* SettingsCell.swift in Sources */,
+				9D70476F222330D700A1A717 /* TimeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
