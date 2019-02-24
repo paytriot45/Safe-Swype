@@ -13,12 +13,14 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
     @IBOutlet weak var settingsTableView: UITableView!
     var settingsArray = ["Time", "Caller", "Ring & Vibration", "Voice", "Wallpaper"]
     var tempdefaultSettings = ["3 Seconds Later", "Ashish", "Opening", "Voice2", ""]
+    let cellImage = ["time", "caller", "ringtone", "voice", "wallpaper"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         settingsTableView.delegate = self
         settingsTableView.dataSource = self
-        settingsTableView.separatorStyle = .none
+        settingsTableView.separatorStyle = .singleLine
+        settingsTableView.tableFooterView = UIView()
     }
     
     @IBAction func startButtonPressed(_ sender: UIButton) {
@@ -31,7 +33,7 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
         let cell = settingsTableView.dequeueReusableCell(withIdentifier: "settingsCell", for: indexPath) as! SettingsCell
         cell.fLabel.text = settingsArray[indexPath.row]
         cell.sLabel.text = tempdefaultSettings[indexPath.row]
-        print(cell.fLabel.frame.height)
+        cell.cellImage.image = UIImage(named: cellImage[indexPath.row])
         return cell
     }
     
