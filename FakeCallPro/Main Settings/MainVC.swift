@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, selectTimeDelegate {
+class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, selectTimeDelegate, callerNameDelegate {
 
     @IBOutlet weak var settingsTableView: UITableView!
     var settingsArray = ["Time", "Caller", "Ring & Vibration", "Voice", "Wallpaper"]
@@ -49,6 +49,9 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, sele
         if currentIndex == 0{
             performSegue(withIdentifier: "timeSet", sender: self)
         }
+        else if currentIndex == 1{
+            performSegue(withIdentifier: "goToCaller", sender: self)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -56,10 +59,19 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, sele
             let destinationVC = segue.destination as! TimeVC
             destinationVC.delegate = self
         }
+        else if segue.identifier == "goToCaller"{
+            let destinationVC = segue.destination as! CallerVC
+            destinationVC.delegate = self
+        }
     }
     
     func timeSelected(sTime: String) {
         tempdefaultSettings.insert(sTime, at: 0)
+        settingsTableView.reloadData()
+    }
+    
+    func callerName(cName: String, dName: String) {
+        tempdefaultSettings.insert(cName, at: 1)
         settingsTableView.reloadData()
     }
 }
