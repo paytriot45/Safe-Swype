@@ -52,6 +52,9 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, sele
         else if currentIndex == 1{
             performSegue(withIdentifier: "goToCaller", sender: self)
         }
+        else if currentIndex == 2{
+            performSegue(withIdentifier: "goToRing", sender: self)
+        }
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -63,15 +66,29 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, sele
             let destinationVC = segue.destination as! CallerVC
             destinationVC.delegate = self
         }
+        else if segue.identifier == "goToRing"{
+            let destinationVC = segue.destination as! RingAndVibVC
+            destinationVC.delegate = self
+        }
+
     }
     
     func timeSelected(sTime: String) {
-        tempdefaultSettings.insert(sTime, at: 0)
+        tempdefaultSettings[0] = sTime
         settingsTableView.reloadData()
     }
     
     func callerName(cName: String, dName: String) {
-        tempdefaultSettings.insert(cName, at: 1)
+        tempdefaultSettings[1] = cName
         settingsTableView.reloadData()
     }
+}
+
+extension MainVC : SelectRingDelegate{
+    func selectedRing(ring: String) {
+        tempdefaultSettings[2] = ring
+        settingsTableView.reloadData()
+    }
+    
+    
 }
