@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, selectTimeDelegate, callerNameDelegate {
+class MainVC: UITableViewController, selectTimeDelegate, callerNameDelegate {
 
     @IBOutlet weak var settingsTableView: UITableView!
     var settingsArray = ["Time", "Caller", "Ring & Vibration", "Voice", "Wallpaper"]
