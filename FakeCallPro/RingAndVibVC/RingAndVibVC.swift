@@ -39,5 +39,9 @@ class RingAndVibVC: UIViewController, UITableViewDelegate, UITableViewDataSource
         delegate?.selectedRing(ring: ringArray[indexPath.row])
     }
     
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return 2
+    }
+    
 
 }

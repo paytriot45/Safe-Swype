@@ -119,6 +119,7 @@
                         <segue destination="NwK-Wc-3pJ" kind="show" identifier="timeSet" id="sNy-kf-I8k"/>
                         <segue destination="Tjc-cH-oJR" kind="show" identifier="goToCaller" id="YRS-cJ-X2d"/>
                         <segue destination="d4c-fp-Ucp" kind="show" identifier="goToRing" id="rjM-wJ-36i"/>
+                        <segue destination="CS0-eE-VfD" kind="show" identifier="goToVoice" id="FVc-BA-etK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xUK-ZC-tNP" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -346,6 +347,56 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qhP-TT-n5W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2096.8000000000002" y="821.73913043478262"/>
+        </scene>
+        <!--Set Voice-->
+        <scene sceneID="ohS-7B-nFI">
+            <objects>
+                <viewController id="CS0-eE-VfD" customClass="SetVoice" customModule="FakeCallPro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eW8-zc-qgf">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Voice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lme-RT-lnj" userLabel="setVoice">
+                                <rect key="frame" x="15" y="64" width="345" height="60.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="t7R-xt-zB5" userLabel="setVoiceTable">
+                                <rect key="frame" x="0.0" y="124.5" width="375" height="542.5"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="voiceCell" id="o26-5f-eqn" userLabel="setVoiceCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="o26-5f-eqn" id="HXh-gJ-Wwn">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="lme-RT-lnj" firstAttribute="height" secondItem="oh2-5K-9Wt" secondAttribute="height" multiplier="0.1" id="1ta-4t-mFd"/>
+                            <constraint firstItem="oh2-5K-9Wt" firstAttribute="trailing" secondItem="lme-RT-lnj" secondAttribute="trailing" constant="15" id="8Tv-hQ-pRt"/>
+                            <constraint firstItem="t7R-xt-zB5" firstAttribute="leading" secondItem="oh2-5K-9Wt" secondAttribute="leading" id="Gn4-tg-d5v"/>
+                            <constraint firstItem="lme-RT-lnj" firstAttribute="top" secondItem="oh2-5K-9Wt" secondAttribute="top" id="JYS-3s-sYN"/>
+                            <constraint firstItem="oh2-5K-9Wt" firstAttribute="bottom" secondItem="t7R-xt-zB5" secondAttribute="bottom" id="Q45-Xx-HXP"/>
+                            <constraint firstItem="oh2-5K-9Wt" firstAttribute="trailing" secondItem="t7R-xt-zB5" secondAttribute="trailing" id="kvX-Ta-fQR"/>
+                            <constraint firstItem="t7R-xt-zB5" firstAttribute="top" secondItem="lme-RT-lnj" secondAttribute="bottom" id="uEI-Op-rxf"/>
+                            <constraint firstItem="lme-RT-lnj" firstAttribute="leading" secondItem="oh2-5K-9Wt" secondAttribute="leading" constant="15" id="yB4-5W-OnX"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oh2-5K-9Wt"/>
+                    </view>
+                    <connections>
+                        <outlet property="setVoiceTable" destination="t7R-xt-zB5" id="kZJ-Xv-zbC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kv4-vq-ycv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1369" y="-634"/>
         </scene>
         <!--Time-->
         <scene sceneID="FG9-Fr-Lut">
