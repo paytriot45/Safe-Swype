@@ -8,9 +8,14 @@
 
 import UIKit
 
-class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, selectTimeDelegate, callerNameDelegate {
+class MainVC: UITableViewController, selectTimeDelegate, callerNameDelegate {
 
-    @IBOutlet weak var settingsTableView: UITableView!
+    @IBOutlet var settingsTableView: UITableView!
+    @IBOutlet weak var defTime: UILabel!
+    @IBOutlet weak var defVoice: UILabel!
+    @IBOutlet weak var defRing: UILabel!
+    @IBOutlet weak var defName: UILabel!
+    
     var settingsArray = ["Time", "Caller", "Ring & Vibration", "Voice", "Wallpaper"]
     var tempdefaultSettings = ["3 Seconds Later", "Ashish", "Opening", "Voice2", ""]
     var defaultSettings = [String]()
@@ -18,46 +23,33 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, sele
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        settingsTableView.delegate = self
-        settingsTableView.dataSource = self
-        settingsTableView.separatorStyle = .singleLine
-        settingsTableView.tableFooterView = UIView()
     }
     
     @IBAction func startButtonPressed(_ sender: UIButton) {
         
     }
     
-    //MARK: TableView Data Source Methods
+    //MARK: TableView Delegate Method
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = settingsTableView.dequeueReusableCell(withIdentifier: "settingsCell", for: indexPath) as! SettingsCell
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let currentIndex = indexPath.row
-        cell.fLabel.text = settingsArray[currentIndex]
-        cell.sLabel.text = tempdefaultSettings[currentIndex]
-        cell.cellImage.image = UIImage(named: cellImage[currentIndex])
-        return cell
-    }
-    
-
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return settingsArray.count
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let currentIndex = indexPath.row
-        if currentIndex == 0{
-            performSegue(withIdentifier: "timeSet", sender: self)
+        let currentSection = indexPath.section
+        if currentSection == 0{
+            
+            if currentIndex == 0 {
+                performSegue(withIdentifier: "timeSet", sender: self)
+            }
+            else if currentIndex == 1{
+                performSegue(withIdentifier: "goToCaller", sender: self)
+            }
+            else if currentIndex == 2{
+                performSegue(withIdentifier: "goToRing", sender: self)
+            }
+            else if currentIndex == 3{
+                performSegue(withIdentifier: "goToVoice", sender: self)
+            }
         }
-        else if currentIndex == 1{
-            performSegue(withIdentifier: "goToCaller", sender: self)
-        }
-        else if currentIndex == 2{
-            performSegue(withIdentifier: "goToRing", sender: self)
-        }
-        else if currentIndex == 3{
-            performSegue(withIdentifier: "goToVoice", sender: self)
-        }
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -81,24 +73,24 @@ class MainVC: UIViewController, UITableViewDelegate, UITableViewDataSource, sele
     }
     
     func timeSelected(sTime: String) {
-        tempdefaultSettings[0] = sTime
+        defTime.text = sTime
         settingsTableView.reloadData()
     }
     
     func callerName(cName: String, dName: String) {
-        tempdefaultSettings[1] = cName
+        defName.text = cName
         settingsTableView.reloadData()
     }
 }
 
 extension MainVC : SelectRingDelegate, selectVoiceDelegate{
     func selectedRing(ring: String) {
-        tempdefaultSettings[2] = ring
+        defRing.text = ring
         settingsTableView.reloadData()
     }
     
     func voiceSelected(sVoice: String) {
-        tempdefaultSettings[3] = sVoice
+        defVoice.text = sVoice
         settingsTableView.reloadData()
     }
     

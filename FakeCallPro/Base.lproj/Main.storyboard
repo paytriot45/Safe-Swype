@@ -285,7 +285,7 @@
         <!--Fake Call Pro-->
         <scene sceneID="Lym-Ya-aQm">
             <objects>
-                <tableViewController title="Fake Call Pro" id="nYn-FI-caE" sceneMemberID="viewController">
+                <tableViewController title="Fake Call Pro" id="nYn-FI-caE" customClass="MainVC" customModule="FakeCallPro" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="100" sectionFooterHeight="18" id="MGw-r3-DHO">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -503,6 +503,11 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Fake Call Pro" id="mDF-Ql-coU"/>
                     <connections>
+                        <outlet property="defName" destination="3pY-TQ-I0X" id="oHn-JC-Je7"/>
+                        <outlet property="defRing" destination="jrx-4K-IrM" id="uAw-Xc-MCp"/>
+                        <outlet property="defTime" destination="B1Z-4C-SWe" id="LUZ-tW-XbO"/>
+                        <outlet property="defVoice" destination="aoA-hC-qD0" id="I3f-q5-xop"/>
+                        <outlet property="settingsTableView" destination="MGw-r3-DHO" id="cjI-cE-SpN"/>
                         <segue destination="NwK-Wc-3pJ" kind="show" identifier="timeSet" id="Oro-Rj-jfu"/>
                         <segue destination="Tjc-cH-oJR" kind="show" identifier="goToCaller" id="oRL-cR-LkQ"/>
                         <segue destination="d4c-fp-Ucp" kind="show" identifier="goToRing" id="36I-sw-lh2"/>
