@@ -308,6 +308,9 @@
                                                                     <constraint firstAttribute="width" secondItem="7NY-fQ-lLh" secondAttribute="height" multiplier="1:1" id="fZj-dL-P4g"/>
                                                                 </constraints>
                                                                 <state key="normal" title="Button" image="end"/>
+                                                                <connections>
+                                                                    <action selector="declineButtonPressed:" destination="bdi-J2-WsD" eventType="touchUpInside" id="CqY-it-oxr"/>
+                                                                </connections>
                                                             </button>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Decline" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="dbi-hz-OFx">
                                                                 <rect key="frame" x="73" y="119.33333333333337" width="61" height="22"/>
@@ -345,7 +348,7 @@
                                                         <rect key="frame" x="0.0" y="0.0" width="207" height="184"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="message" translatesAutoresizingMaskIntoConstraints="NO" id="iIe-t2-kS7">
-                                                                <rect key="frame" x="91" y="59.666666666666686" width="25" height="24.666666666666664"/>
+                                                                <rect key="frame" x="91" y="59.666666666666679" width="25" height="24.666666666666664"/>
                                                                 <constraints>
                                                                     <constraint firstAttribute="width" secondItem="iIe-t2-kS7" secondAttribute="height" multiplier="1:1" id="CY1-nf-AWi"/>
                                                                 </constraints>
@@ -380,6 +383,9 @@
                                                                     <constraint firstAttribute="width" secondItem="L95-Pe-aDE" secondAttribute="height" multiplier="1:1" id="Xbk-uJ-2IF"/>
                                                                 </constraints>
                                                                 <state key="normal" title="Button" image="receive"/>
+                                                                <connections>
+                                                                    <action selector="acceptButtonPressed:" destination="bdi-J2-WsD" eventType="touchUpInside" id="6Oy-Rr-qbT"/>
+                                                                </connections>
                                                             </button>
                                                         </subviews>
                                                         <constraints>
@@ -446,6 +452,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="F3z-ea-TX8"/>
                     </view>
+                    <connections>
+                        <outlet property="callerName" destination="KrN-sM-sTu" id="eNh-tk-ODd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="awZ-Lh-2Uv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -711,9 +720,6 @@
                                                 <constraint firstItem="rpB-Zc-bsF" firstAttribute="centerX" secondItem="uLf-W8-Jld" secondAttribute="centerX" id="anc-bl-ekn"/>
                                             </constraints>
                                         </tableViewCellContentView>
-                                        <connections>
-                                            <segue destination="bdi-J2-WsD" kind="presentation" identifier="startCall" id="ssV-q6-mbq"/>
-                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -734,6 +740,7 @@
                         <segue destination="Tjc-cH-oJR" kind="show" identifier="goToCaller" id="oRL-cR-LkQ"/>
                         <segue destination="d4c-fp-Ucp" kind="show" identifier="goToRing" id="36I-sw-lh2"/>
                         <segue destination="CS0-eE-VfD" kind="show" identifier="goToVoice" id="LEx-Fz-0Rp"/>
+                        <segue destination="bdi-J2-WsD" kind="presentation" identifier="startCall" id="Fgy-J6-bar"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tTF-6p-SI1" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -8,13 +8,16 @@
 
 import UIKit
 
-class MainVC: UITableViewController, selectTimeDelegate, callerNameDelegate {
+
+
+class MainVC: UITableViewController {
 
     @IBOutlet var settingsTableView: UITableView!
     @IBOutlet weak var defTime: UILabel!
     @IBOutlet weak var defVoice: UILabel!
     @IBOutlet weak var defRing: UILabel!
     @IBOutlet weak var defName: UILabel!
+    
     
     var settingsArray = ["Time", "Caller", "Ring & Vibration", "Voice", "Wallpaper"]
     var tempdefaultSettings = ["3 Seconds Later", "Ashish", "Opening", "Voice2", ""]
@@ -25,9 +28,6 @@ class MainVC: UITableViewController, selectTimeDelegate, callerNameDelegate {
         super.viewDidLoad()
     }
     
-    @IBAction func startButtonPressed(_ sender: UIButton) {
-        
-    }
     
     //MARK: TableView Delegate Method
     
@@ -50,6 +50,10 @@ class MainVC: UITableViewController, selectTimeDelegate, callerNameDelegate {
             }
         }
         
+        else if currentSection == 1{
+            performSegue(withIdentifier: "startCall", sender: self)
+        }
+        
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -69,8 +73,16 @@ class MainVC: UITableViewController, selectTimeDelegate, callerNameDelegate {
             let destinationVC = segue.destination as! SetVoice
             destinationVC.delegate = self
         }
-
+        else if segue.identifier == "startCall"{
+            let destinationVC = segue.destination as! CallStartedVC
+            destinationVC.cName = defName.text!
+        }
     }
+    
+    
+}
+
+extension MainVC : selectTimeDelegate, callerNameDelegate, SelectRingDelegate, selectVoiceDelegate {
     
     func timeSelected(sTime: String) {
         defTime.text = sTime
@@ -81,9 +93,7 @@ class MainVC: UITableViewController, selectTimeDelegate, callerNameDelegate {
         defName.text = cName
         settingsTableView.reloadData()
     }
-}
-
-extension MainVC : SelectRingDelegate, selectVoiceDelegate{
+    
     func selectedRing(ring: String) {
         defRing.text = ring
         settingsTableView.reloadData()
