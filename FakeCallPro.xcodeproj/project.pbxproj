@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D178D7C222DA96300A5CFD5 /* CallAcceptedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D178D7B222DA96300A5CFD5 /* CallAcceptedVC.swift */; };
 		9D24C09C2224119C00D4F989 /* RingAndVibVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D24C09B2224119C00D4F989 /* RingAndVibVC.swift */; };
 		9D24C0A122246D9B00D4F989 /* SetVoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D24C0A022246D9B00D4F989 /* SetVoice.swift */; };
 		9D24C0C2222B0E5000D4F989 /* CallStartedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D24C0C1222B0E5000D4F989 /* CallStartedVC.swift */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D178D7B222DA96300A5CFD5 /* CallAcceptedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallAcceptedVC.swift; sourceTree = "<group>"; };
 		9D24C09B2224119C00D4F989 /* RingAndVibVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingAndVibVC.swift; sourceTree = "<group>"; };
 		9D24C0A022246D9B00D4F989 /* SetVoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetVoice.swift; sourceTree = "<group>"; };
 		9D24C0C1222B0E5000D4F989 /* CallStartedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallStartedVC.swift; sourceTree = "<group>"; };
@@ -47,6 +49,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D178D7A222DA93300A5CFD5 /* CallAccepted */ = {
+			isa = PBXGroup;
+			children = (
+				9D178D7B222DA96300A5CFD5 /* CallAcceptedVC.swift */,
+			);
+			path = CallAccepted;
+			sourceTree = "<group>";
+		};
 		9D24C09A2224117000D4F989 /* RingAndVibVC */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +125,7 @@
 		9DA5D2FA22209C15001C9933 /* FakeCallPro */ = {
 			isa = PBXGroup;
 			children = (
+				9D178D7A222DA93300A5CFD5 /* CallAccepted */,
 				9D24C0C0222B0E2700D4F989 /* CallStarted */,
 				9D24C09F22246CB000D4F989 /* SelectVoiceVC */,
 				9D24C09A2224117000D4F989 /* RingAndVibVC */,
@@ -209,6 +220,7 @@
 				9DA5D3102221E815001C9933 /* SettingsCell.swift in Sources */,
 				9D70476F222330D700A1A717 /* TimeVC.swift in Sources */,
 				9D7047722223479100A1A717 /* CallerVC.swift in Sources */,
+				9D178D7C222DA96300A5CFD5 /* CallAcceptedVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

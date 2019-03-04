@@ -29,6 +29,7 @@ class CallStartedVC: UIViewController {
     }
     
     @IBAction func acceptButtonPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "callPicked", sender: self)
     }
     
     
