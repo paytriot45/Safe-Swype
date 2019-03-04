@@ -232,6 +232,49 @@
             </objects>
             <point key="canvasLocation" x="2096.8000000000002" y="821.73913043478262"/>
         </scene>
+        <!--Black Screen-->
+        <scene sceneID="RuM-Vs-uWK">
+            <objects>
+                <viewController title="Black Screen" id="wYy-cR-dQr" customClass="BlackCallScreenVC" customModule="FakeCallPro" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Jlg-1Q-BRQ">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JTh-Ot-s7P" userLabel="backView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You will receive a call after your set time interval. Don't lock the phone and Don't press the home Button." textAlignment="natural" lineBreakMode="clip" numberOfLines="3" baselineAdjustment="alignBaselines" minimumScaleFactor="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="J6k-AZ-Uqf">
+                                        <rect key="frame" x="5" y="675" width="404" height="61"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="J6k-AZ-Uqf" firstAttribute="leading" secondItem="JTh-Ot-s7P" secondAttribute="leading" constant="5" id="PSv-Qw-uuU"/>
+                                    <constraint firstAttribute="trailing" secondItem="J6k-AZ-Uqf" secondAttribute="trailing" constant="5" id="Ur6-bx-yiq"/>
+                                    <constraint firstAttribute="bottom" secondItem="J6k-AZ-Uqf" secondAttribute="bottom" id="khz-3g-3Lb"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="JTh-Ot-s7P" secondAttribute="trailing" id="UBR-xD-VyB"/>
+                            <constraint firstAttribute="bottom" secondItem="JTh-Ot-s7P" secondAttribute="bottom" id="YUJ-jH-I2O"/>
+                            <constraint firstItem="JTh-Ot-s7P" firstAttribute="leading" secondItem="Jlg-1Q-BRQ" secondAttribute="leading" id="mio-dx-xMv"/>
+                            <constraint firstItem="JTh-Ot-s7P" firstAttribute="top" secondItem="Jlg-1Q-BRQ" secondAttribute="top" id="wH3-O3-cLb"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="yQx-Va-cvV"/>
+                    </view>
+                    <connections>
+                        <segue destination="bdi-J2-WsD" kind="presentation" identifier="startCall" id="8HK-ii-MvM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mpa-1p-epQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2285.507246376812" y="-1371.1956521739132"/>
+        </scene>
         <!--Call Started-->
         <scene sceneID="z4n-gT-CGm">
             <objects>
@@ -856,7 +899,7 @@
                         <segue destination="Tjc-cH-oJR" kind="show" identifier="goToCaller" id="oRL-cR-LkQ"/>
                         <segue destination="d4c-fp-Ucp" kind="show" identifier="goToRing" id="36I-sw-lh2"/>
                         <segue destination="CS0-eE-VfD" kind="show" identifier="goToVoice" id="LEx-Fz-0Rp"/>
-                        <segue destination="bdi-J2-WsD" kind="presentation" identifier="startCall" id="Fgy-J6-bar"/>
+                        <segue destination="wYy-cR-dQr" kind="presentation" identifier="goToBlack" id="t6t-gY-uyj"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tTF-6p-SI1" userLabel="First Responder" sceneMemberID="firstResponder"/>

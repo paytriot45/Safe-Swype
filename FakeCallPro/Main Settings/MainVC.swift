@@ -51,7 +51,7 @@ class MainVC: UITableViewController {
         }
         
         else if currentSection == 1{
-            performSegue(withIdentifier: "startCall", sender: self)
+            performSegue(withIdentifier: "goToBlack", sender: self)
         }
         
     }
@@ -73,9 +73,10 @@ class MainVC: UITableViewController {
             let destinationVC = segue.destination as! SetVoice
             destinationVC.delegate = self
         }
-        else if segue.identifier == "startCall"{
-            let destinationVC = segue.destination as! CallStartedVC
-            destinationVC.cName = defName.text!
+        else if segue.identifier == "goToBlack"{
+            let destinationVC = segue.destination as! BlackCallScreenVC
+            destinationVC.time = defTime.text!
+            destinationVC.receivedSettings = ["defCaller" : defName.text!, "defRing" : defRing.text!, "defVoice" : defVoice.text!]
         }
     }
     

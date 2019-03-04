@@ -12,13 +12,16 @@ class CallStartedVC: UIViewController {
 
     @IBOutlet weak var callerName: UILabel!
     
-    var cName : String? = "Ashish"
+    var receivedSettings : [String : String]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        callerName.text = cName
-
-        // Do any additional setup after loading the view.
+        if let callerName = receivedSettings?["defCaller"]{
+            getCallerLabel(cLabel: callerName)
+        }
+        else{
+            callerName.text = "Ashish def"
+        }
     }
     
     func getCallerLabel(cLabel: String) {
@@ -32,6 +35,11 @@ class CallStartedVC: UIViewController {
         performSegue(withIdentifier: "callPicked", sender: self)
     }
     
-    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "callPicked"{
+            let destinationVC = segue.destination as! CallAcceptedVC
+            destinationVC.receivedSettings = receivedSettings
+        }
+    }
 
 }

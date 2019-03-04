@@ -18,7 +18,7 @@ class CallAcceptedVC: UIViewController {
     var timer : Timer!
     var secText = "", minText = ""
     
-    var caller = "Ashish"
+    var receivedSettings : [String : String]?
     var buttonPressedCount = 0
     
     override func viewDidLoad() {
@@ -26,8 +26,8 @@ class CallAcceptedVC: UIViewController {
         
         let device = UIDevice.current
         device.isProximityMonitoringEnabled = true
+        setCallerName()
         
-        callerNameLabel.text = caller
         secText = String.init(format: "%02d", seconds)
         minText = String.init(format: "%02d", minutes)
         timeLabel.text = "\(minText) : \(secText)"
@@ -37,6 +37,14 @@ class CallAcceptedVC: UIViewController {
         })
     }
     
+    func setCallerName(){
+        if let callername = receivedSettings?["defCaller"]{
+            callerNameLabel.text = callername
+        }
+        else{
+            callerNameLabel.text = "Ashish def"
+        }
+    }
 
     func updateSec(){
         if seconds > 59{
