@@ -79,7 +79,7 @@ class CallAcceptedVC: UIViewController {
             self.buttonPressedCount = 0
             UIControl().sendAction(#selector(NSXPCConnection.suspend),
                                    to: UIApplication.shared, for: nil)
-            self.presentingViewController?.presentingViewController?.dismiss(animated: false, completion: nil)
+            self.presentingViewController?.presentingViewController?.presentingViewController?.dismiss(animated: false, completion: nil)
             Timer.invalidate()
         })
     }

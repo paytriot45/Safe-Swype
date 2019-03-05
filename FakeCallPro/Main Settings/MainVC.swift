@@ -8,8 +8,6 @@
 
 import UIKit
 
-
-
 class MainVC: UITableViewController {
 
     @IBOutlet var settingsTableView: UITableView!
@@ -18,11 +16,14 @@ class MainVC: UITableViewController {
     @IBOutlet weak var defRing: UILabel!
     @IBOutlet weak var defName: UILabel!
     
+    var soundPref : Bool = true
+    var vibrationPref : Bool = true
     
-    var settingsArray = ["Time", "Caller", "Ring & Vibration", "Voice", "Wallpaper"]
-    var tempdefaultSettings = ["3 Seconds Later", "Ashish", "Opening", "Voice2", ""]
-    var defaultSettings = [String]()
-    let cellImage = ["time", "caller", "ringtone", "voice", "wallpaper"]
+    
+//    var settingsArray = ["Time", "Caller", "Ring & Vibration", "Voice", "Wallpaper"]
+//    var tempdefaultSettings = ["3 Seconds Later", "Ashish", "Opening", "Voice2", ""]
+//    var defaultSettings = [String]()
+//    let cellImage = ["time", "caller", "ringtone", "voice", "wallpaper"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -76,7 +77,7 @@ class MainVC: UITableViewController {
         else if segue.identifier == "goToBlack"{
             let destinationVC = segue.destination as! BlackCallScreenVC
             destinationVC.time = defTime.text!
-            destinationVC.receivedSettings = ["defCaller" : defName.text!, "defRing" : defRing.text!, "defVoice" : defVoice.text!]
+            destinationVC.receivedSettings = ["defCaller" : defName.text!, "defRing" : defRing.text!, "defVoice" : defVoice.text!, "eSound" : "\(soundPref)", "eVibration" : "\(vibrationPref)"]
         }
     }
     
@@ -95,8 +96,10 @@ extension MainVC : selectTimeDelegate, callerNameDelegate, SelectRingDelegate, s
         settingsTableView.reloadData()
     }
     
-    func selectedRing(ring: String) {
+    func selectedRing(ring: String, eSound: Bool, eVibration: Bool) {
         defRing.text = ring
+        self.soundPref = eSound
+        self.vibrationPref = eVibration
         settingsTableView.reloadData()
     }
     

@@ -9,39 +9,26 @@
 import UIKit
 
 protocol SelectRingDelegate {
-    func selectedRing(ring : String)
+    func selectedRing(ring : String, eSound : Bool, eVibration : Bool)
 }
 
-class RingAndVibVC: UIViewController, UITableViewDelegate, UITableViewDataSource {
+class RingAndVibVC: UITableViewController {
 
-    @IBOutlet weak var ringTableView: UITableView!
-    var ringArray = ["Opening", "Reflection(for iPhone X)", "Marimba", "Xylophone", "Apex", "By The Seaside", "Piano Riff", "Sencha", "Silk", "Strum", "Time Passing", "Night Owl", "Old Phone"]
+    @IBOutlet weak var soundSwitch: UISwitch!
+    @IBOutlet weak var vibrationSwitch: UISwitch!
+    
+    var ringArray = ["Opening", "Reflection", "Marimba", "Xylophone", "Apex", "By The Seaside", "Piano Riff", "Sencha", "Silk", "Strum", "Time Passing", "Night Owl", "Old Phone"]
+
     var delegate : SelectRingDelegate?
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        ringTableView.delegate = self
-        ringTableView.dataSource = self
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return ringArray.count
-    }
-    
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "ringCell", for: indexPath)
-        cell.textLabel?.text = ringArray[indexPath.row]
-        return cell
-    }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        delegate?.selectedRing(ring: ringArray[indexPath.row])
-    }
-    
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return 2
+  
     }
     
 
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        delegate?.selectedRing(ring: ringArray[indexPath.row], eSound: soundSwitch.isOn, eVibration: vibrationSwitch.isOn)
+    }
 }
