@@ -22,7 +22,6 @@ class CallStartedVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        print("Vibration is \(enableVibration)")
         checkCallerName()
         checkVibrationAndSound()
         playSound()
@@ -39,22 +38,19 @@ class CallStartedVC: UIViewController {
     }
     
     func checkVibrationAndSound(){
-         print("Vibration is \(enableVibration)")
         if receivedSettings!["eVibration"] == "false"{
             enableVibration = false
         }
-        else if receivedSettings!["eSound"] == "false"{
+        if receivedSettings!["eSound"] == "false"{
             enableSound = false
         }
     }
     
     func playSoundVibration(){
-         print("Vibration is \(enableVibration)")
         if enableSound == true{
             audioPlayer.play()
         }
         if enableVibration == true{
-            print("enabling Vibration!")
             AudioServicesPlaySystemSound(kSystemSoundID_Vibrate)
         }
     }
@@ -70,7 +66,6 @@ class CallStartedVC: UIViewController {
         catch{
             print(error)
         }
-         print("Vibration is \(enableVibration)")
         //Playing Audio
         playSoundVibration()
         timer = Timer.scheduledTimer(withTimeInterval: 1.0, repeats: true) { (Timer) in

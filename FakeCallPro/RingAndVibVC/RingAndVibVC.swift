@@ -33,6 +33,7 @@ class RingAndVibVC: UITableViewController {
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(true)
         if self.isMovingFromParent{
+            print("Sound is \(soundSwitch.isOn), Vib is \(vibrationSwitch.isOn)")
             delegate?.selectedRing(ring: ringArray[currentIndex], eSound: soundSwitch.isOn, eVibration: vibrationSwitch.isOn)
         }
     }
