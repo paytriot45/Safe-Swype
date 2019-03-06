@@ -18,7 +18,7 @@ class MainVC: UITableViewController {
     
     var soundPref : Bool = true
     var vibrationPref : Bool = true
-    
+    let device = UIDevice.current
     
 //    var settingsArray = ["Time", "Caller", "Ring & Vibration", "Voice", "Wallpaper"]
 //    var tempdefaultSettings = ["3 Seconds Later", "Ashish", "Opening", "Voice2", ""]
@@ -29,7 +29,9 @@ class MainVC: UITableViewController {
         super.viewDidLoad()
     }
     
-    
+    override func viewDidAppear(_ animated: Bool) {
+        device.isProximityMonitoringEnabled = false
+    }
     //MARK: TableView Delegate Method
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

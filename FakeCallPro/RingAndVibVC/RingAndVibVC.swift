@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import AVFoundation
+
 
 protocol SelectRingDelegate {
     func selectedRing(ring : String, eSound : Bool, eVibration : Bool)
@@ -17,6 +19,8 @@ class RingAndVibVC: UITableViewController {
     @IBOutlet weak var soundSwitch: UISwitch!
     @IBOutlet weak var vibrationSwitch: UISwitch!
     
+    var audioPlayer : AVAudioPlayer!
+    var currentIndex = 0
     var ringArray = ["Opening", "Reflection", "Marimba", "Xylophone", "Apex", "By The Seaside", "Piano Riff", "Sencha", "Silk", "Strum", "Time Passing", "Night Owl", "Old Phone"]
 
     var delegate : SelectRingDelegate?
@@ -26,9 +30,35 @@ class RingAndVibVC: UITableViewController {
   
     }
     
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(true)
+        if self.isMovingFromParent{
+            delegate?.selectedRing(ring: ringArray[currentIndex], eSound: soundSwitch.isOn, eVibration: vibrationSwitch.isOn)
+        }
+    }
 
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        delegate?.selectedRing(ring: ringArray[indexPath.row], eSound: soundSwitch.isOn, eVibration: vibrationSwitch.isOn)
+        currentIndex = indexPath.row
+        playSound(with: currentIndex)
     }
+    
+    
+    func playSound(with ringIndex : Int){
+        let soundURl = Bundle.main.url(forResource: ringArray[ringIndex], withExtension: "mp3")
+        do{
+            audioPlayer = try AVAudioPlayer(contentsOf: soundURl!)
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playback, mode: AVAudioSession.Mode.default)
+        }
+            
+        catch{
+            print(error)
+        }
+        
+        //Playing Audio
+        audioPlayer.play()
+        
+        }
+        
 }
+
