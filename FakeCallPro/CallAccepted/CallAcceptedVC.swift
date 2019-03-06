@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import AVFoundation
 
 class CallAcceptedVC: UIViewController {
 
@@ -21,9 +22,25 @@ class CallAcceptedVC: UIViewController {
     var receivedSettings : [String : String]?
     var buttonPressedCount = 0
     
+    var audioPlayer : AVAudioPlayer!
+    
+    func playSound(){
+        let soundURl = Bundle.main.url(forResource: "voice1", withExtension: "mp3")
+        do{
+            audioPlayer = try AVAudioPlayer(contentsOf: soundURl!)
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playAndRecord, mode: AVAudioSession.Mode.default)
+        }
+            
+        catch{
+            print(error)
+        }
+        print("playing Sound")
+        audioPlayer.play()
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        playSound()
         let device = UIDevice.current
         device.isProximityMonitoringEnabled = true
         setCallerName()
@@ -35,6 +52,7 @@ class CallAcceptedVC: UIViewController {
         timer = Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (Timer) in
             self.updateSec()
         })
+        
     }
     
     func setCallerName(){

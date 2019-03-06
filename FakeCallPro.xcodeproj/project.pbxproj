@@ -13,6 +13,7 @@
 		9D178D86222F080200A5CFD5 /* Marimba.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9D178D82222F080200A5CFD5 /* Marimba.mp3 */; };
 		9D178D87222F080200A5CFD5 /* Xylophone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9D178D83222F080200A5CFD5 /* Xylophone.mp3 */; };
 		9D178D88222F080200A5CFD5 /* Opening.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9D178D84222F080200A5CFD5 /* Opening.mp3 */; };
+		9D178D8C2230633700A5CFD5 /* voice1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9D178D8B2230633700A5CFD5 /* voice1.mp3 */; };
 		9D24C09C2224119C00D4F989 /* RingAndVibVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D24C09B2224119C00D4F989 /* RingAndVibVC.swift */; };
 		9D24C0A122246D9B00D4F989 /* SetVoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D24C0A022246D9B00D4F989 /* SetVoice.swift */; };
 		9D24C0C2222B0E5000D4F989 /* CallStartedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D24C0C1222B0E5000D4F989 /* CallStartedVC.swift */; };
@@ -32,6 +33,7 @@
 		9D178D82222F080200A5CFD5 /* Marimba.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Marimba.mp3; sourceTree = "<group>"; };
 		9D178D83222F080200A5CFD5 /* Xylophone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Xylophone.mp3; sourceTree = "<group>"; };
 		9D178D84222F080200A5CFD5 /* Opening.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Opening.mp3; sourceTree = "<group>"; };
+		9D178D8B2230633700A5CFD5 /* voice1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = voice1.mp3; sourceTree = "<group>"; };
 		9D24C09B2224119C00D4F989 /* RingAndVibVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingAndVibVC.swift; sourceTree = "<group>"; };
 		9D24C0A022246D9B00D4F989 /* SetVoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetVoice.swift; sourceTree = "<group>"; };
 		9D24C0C1222B0E5000D4F989 /* CallStartedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallStartedVC.swift; sourceTree = "<group>"; };
@@ -82,6 +84,14 @@
 				9D178D83222F080200A5CFD5 /* Xylophone.mp3 */,
 			);
 			path = RingFiles;
+			sourceTree = "<group>";
+		};
+		9D178D892230624400A5CFD5 /* Voice */ = {
+			isa = PBXGroup;
+			children = (
+				9D178D8B2230633700A5CFD5 /* voice1.mp3 */,
+			);
+			path = Voice;
 			sourceTree = "<group>";
 		};
 		9D24C09A2224117000D4F989 /* RingAndVibVC */ = {
@@ -160,6 +170,7 @@
 				9D70476D222330BA00A1A717 /* TimeVC */,
 				9D70476C2223309900A1A717 /* Main Settings */,
 				9D178D80222F07ED00A5CFD5 /* RingFiles */,
+				9D178D892230624400A5CFD5 /* Voice */,
 				9DA5D2FB22209C15001C9933 /* AppDelegate.swift */,
 				9DA5D2FF22209C15001C9933 /* Main.storyboard */,
 				9DA5D30222209C16001C9933 /* Assets.xcassets */,
@@ -234,6 +245,7 @@
 				9D178D85222F080200A5CFD5 /* Reflection.mp3 in Resources */,
 				9D178D87222F080200A5CFD5 /* Xylophone.mp3 in Resources */,
 				9D178D88222F080200A5CFD5 /* Opening.mp3 in Resources */,
+				9D178D8C2230633700A5CFD5 /* voice1.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
