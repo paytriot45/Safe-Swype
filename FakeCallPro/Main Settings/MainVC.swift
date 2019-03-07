@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import CoreData
 
 class MainVC: UITableViewController {
 
@@ -20,6 +21,8 @@ class MainVC: UITableViewController {
     var vibrationPref : Bool = true
     var dName = "mobile" //Default device name
     let device = UIDevice.current
+    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
 //    var settingsArray = ["Time", "Caller", "Ring & Vibration", "Voice", "Wallpaper"]
 //    var tempdefaultSettings = ["3 Seconds Later", "Ashish", "Opening", "Voice2", ""]
@@ -82,6 +85,16 @@ class MainVC: UITableViewController {
             destinationVC.time = defTime.text!
             destinationVC.receivedSettings = ["defCaller" : defName.text!, "defRing" : defRing.text!, "defVoice" : defVoice.text!, "eSound" : "\(soundPref)", "eVibration" : "\(vibrationPref)", "dName" : "\(dName)"]
         }
+    }
+    
+    func CreateData(){
+        var item = DefSettings(context: self.context)
+        item.defCaller = defName.text!
+        item.defRing = defRing.text!
+        item.defVoice = defVoice.text!
+        item.eSound = "\(soundPref)"
+        item.eVibration = "\(vibrationPref)"
+        item.dName = dName
     }
     
     

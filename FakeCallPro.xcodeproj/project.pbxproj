@@ -16,6 +16,7 @@
 		9D178D8C2230633700A5CFD5 /* voice1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9D178D8B2230633700A5CFD5 /* voice1.mp3 */; };
 		9D178D8E2231ADE600A5CFD5 /* voice2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9D178D8D2231ADE600A5CFD5 /* voice2.mp3 */; };
 		9D178D902231ADF200A5CFD5 /* voice3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9D178D8F2231ADF200A5CFD5 /* voice3.mp3 */; };
+		9D178D932231C31D00A5CFD5 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D178D912231C31D00A5CFD5 /* DataModel.xcdatamodeld */; };
 		9D24C09C2224119C00D4F989 /* RingAndVibVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D24C09B2224119C00D4F989 /* RingAndVibVC.swift */; };
 		9D24C0A122246D9B00D4F989 /* SetVoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D24C0A022246D9B00D4F989 /* SetVoice.swift */; };
 		9D24C0C2222B0E5000D4F989 /* CallStartedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D24C0C1222B0E5000D4F989 /* CallStartedVC.swift */; };
@@ -38,6 +39,7 @@
 		9D178D8B2230633700A5CFD5 /* voice1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = voice1.mp3; sourceTree = "<group>"; };
 		9D178D8D2231ADE600A5CFD5 /* voice2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = voice2.mp3; sourceTree = "<group>"; };
 		9D178D8F2231ADF200A5CFD5 /* voice3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = voice3.mp3; sourceTree = "<group>"; };
+		9D178D922231C31D00A5CFD5 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		9D24C09B2224119C00D4F989 /* RingAndVibVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingAndVibVC.swift; sourceTree = "<group>"; };
 		9D24C0A022246D9B00D4F989 /* SetVoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetVoice.swift; sourceTree = "<group>"; };
 		9D24C0C1222B0E5000D4F989 /* CallStartedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallStartedVC.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				9DA5D30222209C16001C9933 /* Assets.xcassets */,
 				9DA5D30422209C16001C9933 /* LaunchScreen.storyboard */,
 				9DA5D30722209C16001C9933 /* Info.plist */,
+				9D178D912231C31D00A5CFD5 /* DataModel.xcdatamodeld */,
 			);
 			path = FakeCallPro;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9DA5D2FC22209C15001C9933 /* AppDelegate.swift in Sources */,
+				9D178D932231C31D00A5CFD5 /* DataModel.xcdatamodeld in Sources */,
 				9DA5D30E2221DD1C001C9933 /* MainVC.swift in Sources */,
 				9D24C0C2222B0E5000D4F989 /* CallStartedVC.swift in Sources */,
 				9D24C0A122246D9B00D4F989 /* SetVoice.swift in Sources */,
@@ -472,6 +476,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9D178D912231C31D00A5CFD5 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9D178D922231C31D00A5CFD5 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 9D178D922231C31D00A5CFD5 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 9DA5D2F022209C15001C9933 /* Project object */;
 }
