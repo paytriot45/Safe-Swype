@@ -18,6 +18,7 @@ class MainVC: UITableViewController {
     
     var soundPref : Bool = true
     var vibrationPref : Bool = true
+    var dName = "mobile" //Default device name
     let device = UIDevice.current
     
 //    var settingsArray = ["Time", "Caller", "Ring & Vibration", "Voice", "Wallpaper"]
@@ -79,7 +80,7 @@ class MainVC: UITableViewController {
         else if segue.identifier == "goToBlack"{
             let destinationVC = segue.destination as! BlackCallScreenVC
             destinationVC.time = defTime.text!
-            destinationVC.receivedSettings = ["defCaller" : defName.text!, "defRing" : defRing.text!, "defVoice" : defVoice.text!, "eSound" : "\(soundPref)", "eVibration" : "\(vibrationPref)"]
+            destinationVC.receivedSettings = ["defCaller" : defName.text!, "defRing" : defRing.text!, "defVoice" : defVoice.text!, "eSound" : "\(soundPref)", "eVibration" : "\(vibrationPref)", "dName" : "\(dName)"]
         }
     }
     
@@ -95,6 +96,7 @@ extension MainVC : selectTimeDelegate, callerNameDelegate, SelectRingDelegate, s
     
     func callerName(cName: String, dName: String) {
         defName.text = cName
+        self.dName = dName
         settingsTableView.reloadData()
     }
     

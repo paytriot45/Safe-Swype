@@ -18,28 +18,17 @@ class CallAcceptedVC: UIViewController {
     var minutes : Int = 0
     var timer : Timer!
     var secText = "", minText = ""
+    var selectedVoice = "voice1"
     
     var receivedSettings : [String : String]?
     var buttonPressedCount = 0
     
     var audioPlayer : AVAudioPlayer!
     
-    func playSound(){
-        let soundURl = Bundle.main.url(forResource: "voice1", withExtension: "mp3")
-        do{
-            audioPlayer = try AVAudioPlayer(contentsOf: soundURl!)
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playAndRecord, mode: AVAudioSession.Mode.default)
-        }
-            
-        catch{
-            print(error)
-        }
-        print("playing Sound")
-        audioPlayer.play()
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        selectVoice()
         playSound()
         let device = UIDevice.current
         device.isProximityMonitoringEnabled = true
@@ -53,6 +42,27 @@ class CallAcceptedVC: UIViewController {
             self.updateSec()
         })
         
+    }
+    
+    func selectVoice(){
+        if let receivedVoice = receivedSettings?["defVoice"]{
+            selectedVoice = receivedVoice
+        }
+    }
+    
+    func playSound(){
+        print("Selected Voice is \(selectedVoice)")
+        let soundURl = Bundle.main.url(forResource: "\(selectedVoice.lowercased())", withExtension: "mp3")
+        do{
+            audioPlayer = try AVAudioPlayer(contentsOf: soundURl!)
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSession.Category.playAndRecord, mode: AVAudioSession.Mode.default)
+        }
+            
+        catch{
+            print(error)
+        }
+        print("playing Sound")
+        audioPlayer.play()
     }
     
     func setCallerName(){

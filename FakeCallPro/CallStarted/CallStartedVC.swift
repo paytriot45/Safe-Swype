@@ -12,6 +12,7 @@ import AVFoundation
 class CallStartedVC: UIViewController {
 
     @IBOutlet weak var callerName: UILabel!
+    @IBOutlet weak var deviceName: UILabel!
     
     var receivedSettings : [String : String]?
     var audioPlayer : AVAudioPlayer!
@@ -74,12 +75,13 @@ class CallStartedVC: UIViewController {
         
     }
     
-    
-    //MARK: Call Accept and Decline Funtions
-    
     func getCallerLabel(cLabel: String) {
         callerName.text = cLabel
+        deviceName.text = receivedSettings!["dName"]!
     }
+    
+    
+    //MARK: Call Accept and Decline Funtions
     
     @IBAction func declineButtonPressed(_ sender: UIButton) {
         audioPlayer.stop()
@@ -94,6 +96,8 @@ class CallStartedVC: UIViewController {
         timer.invalidate()
         performSegue(withIdentifier: "callPicked", sender: self)
     }
+    
+    //Sending Default Settings to the next Segue
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "callPicked"{

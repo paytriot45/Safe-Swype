@@ -40,8 +40,11 @@ class RingAndVibVC: UITableViewController {
 
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        currentIndex = indexPath.row
-        playSound(with: currentIndex)
+        if indexPath.section == 1{
+            currentIndex = indexPath.row
+            playSound(with: currentIndex)
+        }
+        
     }
     
     
