@@ -17,6 +17,11 @@
 		9D178D8E2231ADE600A5CFD5 /* voice2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9D178D8D2231ADE600A5CFD5 /* voice2.mp3 */; };
 		9D178D902231ADF200A5CFD5 /* voice3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9D178D8F2231ADF200A5CFD5 /* voice3.mp3 */; };
 		9D178D932231C31D00A5CFD5 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D178D912231C31D00A5CFD5 /* DataModel.xcdatamodeld */; };
+		9D178D992236F4EB00A5CFD5 /* ss4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D178D952236F4EA00A5CFD5 /* ss4.jpg */; };
+		9D178D9A2236F4EB00A5CFD5 /* ss3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D178D962236F4EB00A5CFD5 /* ss3.jpg */; };
+		9D178D9B2236F4EB00A5CFD5 /* ss1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D178D972236F4EB00A5CFD5 /* ss1.jpg */; };
+		9D178D9C2236F4EB00A5CFD5 /* ss2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 9D178D982236F4EB00A5CFD5 /* ss2.jpg */; };
+		9D178D9E2236F51600A5CFD5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9D178D9D2236F51600A5CFD5 /* .gitignore */; };
 		9D24C09C2224119C00D4F989 /* RingAndVibVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D24C09B2224119C00D4F989 /* RingAndVibVC.swift */; };
 		9D24C0A122246D9B00D4F989 /* SetVoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D24C0A022246D9B00D4F989 /* SetVoice.swift */; };
 		9D24C0C2222B0E5000D4F989 /* CallStartedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D24C0C1222B0E5000D4F989 /* CallStartedVC.swift */; };
@@ -40,6 +45,11 @@
 		9D178D8D2231ADE600A5CFD5 /* voice2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = voice2.mp3; sourceTree = "<group>"; };
 		9D178D8F2231ADF200A5CFD5 /* voice3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = voice3.mp3; sourceTree = "<group>"; };
 		9D178D922231C31D00A5CFD5 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		9D178D952236F4EA00A5CFD5 /* ss4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ss4.jpg; sourceTree = "<group>"; };
+		9D178D962236F4EB00A5CFD5 /* ss3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ss3.jpg; sourceTree = "<group>"; };
+		9D178D972236F4EB00A5CFD5 /* ss1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ss1.jpg; sourceTree = "<group>"; };
+		9D178D982236F4EB00A5CFD5 /* ss2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ss2.jpg; sourceTree = "<group>"; };
+		9D178D9D2236F51600A5CFD5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		9D24C09B2224119C00D4F989 /* RingAndVibVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingAndVibVC.swift; sourceTree = "<group>"; };
 		9D24C0A022246D9B00D4F989 /* SetVoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetVoice.swift; sourceTree = "<group>"; };
 		9D24C0C1222B0E5000D4F989 /* CallStartedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallStartedVC.swift; sourceTree = "<group>"; };
@@ -100,6 +110,17 @@
 				9D178D8F2231ADF200A5CFD5 /* voice3.mp3 */,
 			);
 			path = Voice;
+			sourceTree = "<group>";
+		};
+		9D178D942236F40400A5CFD5 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				9D178D972236F4EB00A5CFD5 /* ss1.jpg */,
+				9D178D982236F4EB00A5CFD5 /* ss2.jpg */,
+				9D178D962236F4EB00A5CFD5 /* ss3.jpg */,
+				9D178D952236F4EA00A5CFD5 /* ss4.jpg */,
+			);
+			path = Screenshots;
 			sourceTree = "<group>";
 		};
 		9D24C09A2224117000D4F989 /* RingAndVibVC */ = {
@@ -185,6 +206,8 @@
 				9DA5D30422209C16001C9933 /* LaunchScreen.storyboard */,
 				9DA5D30722209C16001C9933 /* Info.plist */,
 				9D178D912231C31D00A5CFD5 /* DataModel.xcdatamodeld */,
+				9D178D942236F40400A5CFD5 /* Screenshots */,
+				9D178D9D2236F51600A5CFD5 /* .gitignore */,
 			);
 			path = FakeCallPro;
 			sourceTree = "<group>";
@@ -248,11 +271,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				9D178D86222F080200A5CFD5 /* Marimba.mp3 in Resources */,
+				9D178D992236F4EB00A5CFD5 /* ss4.jpg in Resources */,
 				9DA5D30622209C16001C9933 /* LaunchScreen.storyboard in Resources */,
+				9D178D9A2236F4EB00A5CFD5 /* ss3.jpg in Resources */,
+				9D178D9B2236F4EB00A5CFD5 /* ss1.jpg in Resources */,
 				9DA5D30322209C16001C9933 /* Assets.xcassets in Resources */,
 				9DA5D30122209C15001C9933 /* Main.storyboard in Resources */,
 				9D178D85222F080200A5CFD5 /* Reflection.mp3 in Resources */,
+				9D178D9C2236F4EB00A5CFD5 /* ss2.jpg in Resources */,
 				9D178D902231ADF200A5CFD5 /* voice3.mp3 in Resources */,
+				9D178D9E2236F51600A5CFD5 /* .gitignore in Resources */,
 				9D178D87222F080200A5CFD5 /* Xylophone.mp3 in Resources */,
 				9D178D8E2231ADE600A5CFD5 /* voice2.mp3 in Resources */,
 				9D178D88222F080200A5CFD5 /* Opening.mp3 in Resources */,
