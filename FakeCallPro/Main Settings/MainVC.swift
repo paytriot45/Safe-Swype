@@ -21,6 +21,7 @@ class MainVC: UITableViewController {
     var vibrationPref : Bool = true
     var dName = "mobile" //Default device name
     let device = UIDevice.current
+    var savedSettings : [DefSettings]?
     
     let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
     
@@ -31,6 +32,7 @@ class MainVC: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        loadData()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -81,6 +83,7 @@ class MainVC: UITableViewController {
             destinationVC.delegate = self
         }
         else if segue.identifier == "goToBlack"{
+            CreateData()
             let destinationVC = segue.destination as! BlackCallScreenVC
             destinationVC.time = defTime.text!
             destinationVC.receivedSettings = ["defCaller" : defName.text!, "defRing" : defRing.text!, "defVoice" : defVoice.text!, "eSound" : "\(soundPref)", "eVibration" : "\(vibrationPref)", "dName" : "\(dName)"]
@@ -89,12 +92,49 @@ class MainVC: UITableViewController {
     
     func CreateData(){
         var item = DefSettings(context: self.context)
+        item.defTime = defTime.text!
         item.defCaller = defName.text!
         item.defRing = defRing.text!
         item.defVoice = defVoice.text!
         item.eSound = "\(soundPref)"
         item.eVibration = "\(vibrationPref)"
         item.dName = dName
+        saveData()
+    }
+    
+    func saveData(){
+        do{
+            try context.save()
+        }
+        catch{
+            print(error)
+        }
+    }
+    
+    func loadData(){
+        if let _ = savedSettings?.count{
+            let request : NSFetchRequest<DefSettings> = DefSettings.fetchRequest()
+            do{
+                savedSettings = try context.fetch(request)
+            }
+                
+            catch{
+                print(error)
+            }
+            loadEachItem()
+        }
+    }
+    
+    func loadEachItem(){
+        if let mySettings = savedSettings?.last{
+            defTime.text = mySettings.defTime
+            defName.text = mySettings.defCaller
+            defRing.text = mySettings.defRing
+            defVoice.text = mySettings.defVoice
+            soundPref = Bool(mySettings.eSound!)!
+            vibrationPref = Bool(mySettings.eVibration!)!
+            dName = mySettings.dName!
+        }
     }
     
     
