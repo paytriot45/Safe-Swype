@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X33-P6-UQA">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="X33-P6-UQA">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -15,11 +16,11 @@
             <objects>
                 <viewController id="Tjc-cH-oJR" customClass="CallerVC" customModule="FakeCallPro" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IaR-W5-7fZ">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="620"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="3Sm-9P-EkG">
-                                <rect key="frame" x="180.66666666666666" y="114" width="53" height="23"/>
+                                <rect key="frame" x="180.66666666666666" y="50" width="53" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="23" id="yCD-ks-tU4"/>
                                 </constraints>
@@ -28,7 +29,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0aI-T4-vse" userLabel="nameTextField">
-                                <rect key="frame" x="0.0" y="162" width="414" height="30"/>
+                                <rect key="frame" x="0.0" y="98" width="414" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="Nnp-iv-rmh"/>
                                 </constraints>
@@ -37,7 +38,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Device" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="YbA-BE-uZj">
-                                <rect key="frame" x="180.66666666666666" y="242" width="53" height="23"/>
+                                <rect key="frame" x="180.66666666666666" y="178" width="53" height="23"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="23" id="fex-nw-bvQ"/>
                                 </constraints>
@@ -46,7 +47,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HWi-nO-niQ" userLabel="deviceTextField">
-                                <rect key="frame" x="0.0" y="290" width="414" height="30"/>
+                                <rect key="frame" x="0.0" y="226" width="414" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="gKg-VE-cGN"/>
                                 </constraints>
@@ -55,7 +56,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENJ-Rq-BCh">
-                                <rect key="frame" x="147" y="439" width="120" height="60"/>
+                                <rect key="frame" x="147" y="375" width="120" height="60"/>
                                 <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="60" id="38K-gD-O7Q"/>
@@ -101,7 +102,7 @@
             <objects>
                 <tableViewController id="S9b-wL-TZH" customClass="RingAndVibVC" customModule="FakeCallPro" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="3At-xc-nfn">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="620"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                         <sections>
@@ -579,7 +580,7 @@
                                         <rect key="frame" x="0.0" y="245.33333333333331" width="414" height="245.33333333333331"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="callReceiveBack" translatesAutoresizingMaskIntoConstraints="NO" id="agd-O7-v8k">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="245.33333333333334"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="245.33333333333346"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -658,17 +659,17 @@
             <objects>
                 <viewController id="CS0-eE-VfD" customClass="SetVoice" customModule="FakeCallPro" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eW8-zc-qgf">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="620"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select Voice" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lme-RT-lnj" userLabel="setVoice">
-                                <rect key="frame" x="15" y="63.999999999999993" width="384" height="67.333333333333314"/>
+                                <rect key="frame" x="15" y="0.0" width="384" height="62"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" red="0.4756349325" green="0.47564673419999998" blue="0.47564041610000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="t7R-xt-zB5" userLabel="setVoiceTable">
-                                <rect key="frame" x="0.0" y="131.33333333333331" width="414" height="604.66666666666674"/>
+                                <rect key="frame" x="0.0" y="62" width="414" height="558"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="voiceCell" id="o26-5f-eqn" userLabel="setVoiceCell">
@@ -708,9 +709,9 @@
             <objects>
                 <tableViewController title="Fake Call Pro" id="nYn-FI-caE" customClass="MainVC" customModule="FakeCallPro" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="100" sectionFooterHeight="18" id="MGw-r3-DHO">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="620"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <sections>
                             <tableViewSection headerTitle="Basic Setting" id="vdj-32-GHC">
                                 <cells>
@@ -757,6 +758,9 @@
                                                 <constraint firstItem="IBB-dV-8JH" firstAttribute="leading" secondItem="I5Z-xU-Jib" secondAttribute="trailing" constant="9.5" id="djr-1g-ibR"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="boolean" keyPath="enableShadow" value="YES"/>
+                                        </userDefinedRuntimeAttributes>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" id="fha-bd-7qW">
                                         <rect key="frame" x="0.0" y="99.333333333333343" width="414" height="44"/>
@@ -922,7 +926,7 @@
                             <outlet property="delegate" destination="nYn-FI-caE" id="gbn-If-Jj7"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Fake Call Pro" id="mDF-Ql-coU"/>
+                    <navigationItem key="navigationItem" title="Fake Call Pemium" id="mDF-Ql-coU"/>
                     <connections>
                         <outlet property="defName" destination="3pY-TQ-I0X" id="oHn-JC-Je7"/>
                         <outlet property="defRing" destination="jrx-4K-IrM" id="uAw-Xc-MCp"/>
@@ -945,7 +949,7 @@
             <objects>
                 <tableViewController title="Time" id="NwK-Wc-3pJ" customClass="TimeVC" customModule="FakeCallPro" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dl6-Z9-QuX" userLabel="timeTableView">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="620"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <prototypes>
@@ -976,9 +980,15 @@
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="X33-P6-UQA" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="D7d-4i-dvm">
-                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" largeTitles="YES" id="D7d-4i-dvm">
+                        <rect key="frame" x="0.0" y="20" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="pro-Orange"/>
+                        <color key="tintColor" name="pro-Orange"/>
+                        <color key="barTintColor" name="pro-Orange"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -991,9 +1001,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="alarm" width="48" height="48"/>
+        <image name="alarm" width="32" height="32"/>
         <image name="callBackground" width="1344" height="621"/>
-        <image name="callReceiveBack" width="414" height="277.66665649414062"/>
+        <image name="callReceiveBack" width="621" height="416.5"/>
         <image name="callReceivedBackFull" width="1344" height="621"/>
         <image name="caller" width="250" height="250"/>
         <image name="end" width="256" height="256"/>
@@ -1002,5 +1012,9 @@
         <image name="ringtone" width="250" height="250"/>
         <image name="time" width="250" height="250"/>
         <image name="voice" width="250" height="250"/>
+        <namedColor name="pro-Orange">
+            <color red="0.94499999284744263" green="0.60000002384185791" blue="0.28999999165534973" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
+    <color key="tintColor" name="pro-Orange"/>
 </document>

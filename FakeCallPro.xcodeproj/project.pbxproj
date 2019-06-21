@@ -25,6 +25,7 @@
 		9D24C09C2224119C00D4F989 /* RingAndVibVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D24C09B2224119C00D4F989 /* RingAndVibVC.swift */; };
 		9D24C0A122246D9B00D4F989 /* SetVoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D24C0A022246D9B00D4F989 /* SetVoice.swift */; };
 		9D24C0C2222B0E5000D4F989 /* CallStartedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D24C0C1222B0E5000D4F989 /* CallStartedVC.swift */; };
+		9D4731C122BD4C2E00C4C28D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4731C022BD4C2E00C4C28D /* Extensions.swift */; };
 		9D70476F222330D700A1A717 /* TimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D70476E222330D700A1A717 /* TimeVC.swift */; };
 		9D7047722223479100A1A717 /* CallerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7047712223479100A1A717 /* CallerVC.swift */; };
 		9DA5D2FC22209C15001C9933 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5D2FB22209C15001C9933 /* AppDelegate.swift */; };
@@ -53,6 +54,7 @@
 		9D24C09B2224119C00D4F989 /* RingAndVibVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingAndVibVC.swift; sourceTree = "<group>"; };
 		9D24C0A022246D9B00D4F989 /* SetVoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetVoice.swift; sourceTree = "<group>"; };
 		9D24C0C1222B0E5000D4F989 /* CallStartedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallStartedVC.swift; sourceTree = "<group>"; };
+		9D4731C022BD4C2E00C4C28D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		9D70476E222330D700A1A717 /* TimeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeVC.swift; sourceTree = "<group>"; };
 		9D7047712223479100A1A717 /* CallerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallerVC.swift; sourceTree = "<group>"; };
 		9DA5D2F822209C15001C9933 /* FakeCallPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FakeCallPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -147,6 +149,14 @@
 			path = CallStarted;
 			sourceTree = "<group>";
 		};
+		9D4731BF22BD4C1000C4C28D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9D4731C022BD4C2E00C4C28D /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		9D70476C2223309900A1A717 /* Main Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -190,6 +200,7 @@
 		9DA5D2FA22209C15001C9933 /* FakeCallPro */ = {
 			isa = PBXGroup;
 			children = (
+				9D4731BF22BD4C1000C4C28D /* Extensions */,
 				9D178D7D222DC41C00A5CFD5 /* BlackCall */,
 				9D178D7A222DA93300A5CFD5 /* CallAccepted */,
 				9D24C0C0222B0E2700D4F989 /* CallStarted */,
@@ -304,6 +315,7 @@
 				9D24C09C2224119C00D4F989 /* RingAndVibVC.swift in Sources */,
 				9D70476F222330D700A1A717 /* TimeVC.swift in Sources */,
 				9D7047722223479100A1A717 /* CallerVC.swift in Sources */,
+				9D4731C122BD4C2E00C4C28D /* Extensions.swift in Sources */,
 				9D178D7C222DA96300A5CFD5 /* CallAcceptedVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
