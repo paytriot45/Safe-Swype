@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--CallerVC-->
+        <!--Caller ID-->
         <scene sceneID="tvj-r2-QAh">
             <objects>
-                <viewController id="Tjc-cH-oJR" customClass="CallerVC" customModule="FakeCallPro" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Caller ID" id="Tjc-cH-oJR" customClass="CallerVC" customModule="FakeCallPro" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IaR-W5-7fZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="620"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -95,12 +95,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JWS-RZ-PPP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1368.8" y="846.9265367316342"/>
+            <point key="canvasLocation" x="1251" y="920"/>
         </scene>
-        <!--Ring And VibVC-->
+        <!--Ring & Vibration-->
         <scene sceneID="m9K-aE-mKx">
             <objects>
-                <tableViewController id="S9b-wL-TZH" customClass="RingAndVibVC" customModule="FakeCallPro" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Ring &amp; Vibration" id="S9b-wL-TZH" customClass="RingAndVibVC" customModule="FakeCallPro" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="3At-xc-nfn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="620"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -263,7 +263,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u8L-Z9-c8U" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2239" y="889"/>
+            <point key="canvasLocation" x="2286" y="977"/>
         </scene>
         <!--Black Screen-->
         <scene sceneID="RuM-Vs-uWK">
@@ -307,7 +307,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mpa-1p-epQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2285.507246376812" y="-1371.1956521739132"/>
+            <point key="canvasLocation" x="2752" y="-634"/>
         </scene>
         <!--Call Started-->
         <scene sceneID="z4n-gT-CGm">
@@ -537,7 +537,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="awZ-Lh-2Uv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2239.130434782609" y="-636.68478260869574"/>
+            <point key="canvasLocation" x="3648" y="-634"/>
         </scene>
         <!--Call AcceptedVC-->
         <scene sceneID="Uvx-i9-Yms">
@@ -580,7 +580,7 @@
                                         <rect key="frame" x="0.0" y="245.33333333333331" width="414" height="245.33333333333331"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="callReceiveBack" translatesAutoresizingMaskIntoConstraints="NO" id="agd-O7-v8k">
-                                                <rect key="frame" x="0.0" y="0.0" width="414" height="245.33333333333346"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="414" height="245.33333333333334"/>
                                             </imageView>
                                         </subviews>
                                         <color key="backgroundColor" red="1" green="0.52120530610000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -652,12 +652,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0jW-aF-FoG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3097" y="-633"/>
+            <point key="canvasLocation" x="4474" y="-634"/>
         </scene>
-        <!--Set Voice-->
+        <!--Earpiece Sound-->
         <scene sceneID="ohS-7B-nFI">
             <objects>
-                <viewController id="CS0-eE-VfD" customClass="SetVoice" customModule="FakeCallPro" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Earpiece Sound" id="CS0-eE-VfD" customClass="SetVoice" customModule="FakeCallPro" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eW8-zc-qgf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="620"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -702,7 +702,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kv4-vq-ycv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1369" y="-634"/>
+            <point key="canvasLocation" x="3526" y="920"/>
         </scene>
         <!--Fake Call Pro-->
         <scene sceneID="Lym-Ya-aQm">
@@ -906,12 +906,13 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Start Call" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rpB-Zc-bsF">
-                                                    <rect key="frame" x="171.66666666666666" y="11.333333333333336" width="71" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
+                                                    <rect key="frame" x="170" y="11.333333333333336" width="74.333333333333314" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <color key="backgroundColor" name="pro-Orange"/>
                                             <constraints>
                                                 <constraint firstItem="rpB-Zc-bsF" firstAttribute="centerY" secondItem="uLf-W8-Jld" secondAttribute="centerY" id="Ucp-nd-bfk"/>
                                                 <constraint firstItem="rpB-Zc-bsF" firstAttribute="centerX" secondItem="uLf-W8-Jld" secondAttribute="centerX" id="anc-bl-ekn"/>
@@ -973,7 +974,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rFP-Jw-88C" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3048.8000000000002" y="90.404797601199405"/>
+            <point key="canvasLocation" x="3648" y="161"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="TRJ-JP-1bh">
@@ -997,7 +998,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yT6-zz-tOP" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1333.5999999999999" y="98.50074962518741"/>
+            <point key="canvasLocation" x="1304" y="161"/>
         </scene>
     </scenes>
     <resources>

@@ -112,7 +112,7 @@ class MainVC: UITableViewController {
     }
     
     func loadData(){
-        if let _ = savedSettings?.count{
+//        if let _ = savedSettings?.count{
             let request : NSFetchRequest<DefSettings> = DefSettings.fetchRequest()
             do{
                 savedSettings = try context.fetch(request)
@@ -122,7 +122,7 @@ class MainVC: UITableViewController {
                 print(error)
             }
             loadEachItem()
-        }
+//        }
     }
     
     func loadEachItem(){
