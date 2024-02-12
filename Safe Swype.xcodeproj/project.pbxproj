@@ -239,7 +239,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 9DA5D2F322209C15001C9933 /* Build configuration list for PBXProject "app 1" */;
+			buildConfigurationList = 9DA5D2F322209C15001C9933 /* Build configuration list for PBXProject "Safe Swype" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -476,7 +476,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		9DA5D2F322209C15001C9933 /* Build configuration list for PBXProject "app 1" */ = {
+		9DA5D2F322209C15001C9933 /* Build configuration list for PBXProject "Safe Swype" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9DA5D30822209C16001C9933 /* Debug */,

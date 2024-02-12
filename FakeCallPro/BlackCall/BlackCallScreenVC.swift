@@ -20,11 +20,14 @@ class BlackCallScreenVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         timeDouble()
-        tipLabel.text = "You will receive a call after \(timeInDouble) seconds. Don't lock the phone and Don't press the home Button."
-        timer = Timer.scheduledTimer(withTimeInterval: timeInDouble, repeats: false, block: { (Timer) in
-        self.performSegue(withIdentifier: "startCall", sender: self)
+        if let label = tipLabel {
+            label.text = "You will receive a call after \(timeInDouble) seconds. Don't lock the phone and Don't press the home Button."
+        }
+        timer = Timer.scheduledTimer(withTimeInterval: timeInDouble, repeats: false, block: { [weak self] (Timer) in
+            self?.performSegue(withIdentifier: "startCall", sender: self)
         })
     }
+
     
 
     
@@ -97,11 +100,12 @@ class BlackCallScreenVC: UIViewController {
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "startCall"{
-            let destinationVC = segue.destination as! CallStartedVC
+        if segue.identifier == "startCall",
+           let destinationVC = segue.destination as? CallStartedVC {
             destinationVC.receivedSettings = receivedSettings
         }
     }
+
 
 
 }
