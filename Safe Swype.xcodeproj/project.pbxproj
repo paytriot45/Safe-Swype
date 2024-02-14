@@ -1,0 +1,513 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D178D7C222DA96300A5CFD5 /* CallAcceptedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D178D7B222DA96300A5CFD5 /* CallAcceptedVC.swift */; };
+		9D178D7F222DC43800A5CFD5 /* BlackCallScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D178D7E222DC43800A5CFD5 /* BlackCallScreenVC.swift */; };
+		9D178D85222F080200A5CFD5 /* Reflection.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9D178D81222F080200A5CFD5 /* Reflection.mp3 */; };
+		9D178D86222F080200A5CFD5 /* Marimba.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9D178D82222F080200A5CFD5 /* Marimba.mp3 */; };
+		9D178D87222F080200A5CFD5 /* Xylophone.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9D178D83222F080200A5CFD5 /* Xylophone.mp3 */; };
+		9D178D88222F080200A5CFD5 /* Opening.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9D178D84222F080200A5CFD5 /* Opening.mp3 */; };
+		9D178D8C2230633700A5CFD5 /* voice1.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9D178D8B2230633700A5CFD5 /* voice1.mp3 */; };
+		9D178D8E2231ADE600A5CFD5 /* voice2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9D178D8D2231ADE600A5CFD5 /* voice2.mp3 */; };
+		9D178D902231ADF200A5CFD5 /* voice3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9D178D8F2231ADF200A5CFD5 /* voice3.mp3 */; };
+		9D178D932231C31D00A5CFD5 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 9D178D912231C31D00A5CFD5 /* DataModel.xcdatamodeld */; };
+		9D178D9E2236F51600A5CFD5 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 9D178D9D2236F51600A5CFD5 /* .gitignore */; };
+		9D24C09C2224119C00D4F989 /* RingAndVibVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D24C09B2224119C00D4F989 /* RingAndVibVC.swift */; };
+		9D24C0A122246D9B00D4F989 /* SetVoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D24C0A022246D9B00D4F989 /* SetVoice.swift */; };
+		9D24C0C2222B0E5000D4F989 /* CallStartedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D24C0C1222B0E5000D4F989 /* CallStartedVC.swift */; };
+		9D4731C122BD4C2E00C4C28D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4731C022BD4C2E00C4C28D /* Extensions.swift */; };
+		9D70476F222330D700A1A717 /* TimeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D70476E222330D700A1A717 /* TimeVC.swift */; };
+		9D7047722223479100A1A717 /* CallerVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D7047712223479100A1A717 /* CallerVC.swift */; };
+		9DA5D2FC22209C15001C9933 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5D2FB22209C15001C9933 /* AppDelegate.swift */; };
+		9DA5D30122209C15001C9933 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA5D2FF22209C15001C9933 /* Main.storyboard */; };
+		9DA5D30322209C16001C9933 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DA5D30222209C16001C9933 /* Assets.xcassets */; };
+		9DA5D30622209C16001C9933 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DA5D30422209C16001C9933 /* LaunchScreen.storyboard */; };
+		9DA5D30E2221DD1C001C9933 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DA5D30D2221DD1C001C9933 /* MainVC.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9D178D7B222DA96300A5CFD5 /* CallAcceptedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallAcceptedVC.swift; sourceTree = "<group>"; };
+		9D178D7E222DC43800A5CFD5 /* BlackCallScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlackCallScreenVC.swift; sourceTree = "<group>"; };
+		9D178D81222F080200A5CFD5 /* Reflection.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Reflection.mp3; sourceTree = "<group>"; };
+		9D178D82222F080200A5CFD5 /* Marimba.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Marimba.mp3; sourceTree = "<group>"; };
+		9D178D83222F080200A5CFD5 /* Xylophone.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Xylophone.mp3; sourceTree = "<group>"; };
+		9D178D84222F080200A5CFD5 /* Opening.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Opening.mp3; sourceTree = "<group>"; };
+		9D178D8B2230633700A5CFD5 /* voice1.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = voice1.mp3; sourceTree = "<group>"; };
+		9D178D8D2231ADE600A5CFD5 /* voice2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = voice2.mp3; sourceTree = "<group>"; };
+		9D178D8F2231ADF200A5CFD5 /* voice3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = voice3.mp3; sourceTree = "<group>"; };
+		9D178D922231C31D00A5CFD5 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		9D178D9D2236F51600A5CFD5 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		9D24C09B2224119C00D4F989 /* RingAndVibVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingAndVibVC.swift; sourceTree = "<group>"; };
+		9D24C0A022246D9B00D4F989 /* SetVoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetVoice.swift; sourceTree = "<group>"; };
+		9D24C0C1222B0E5000D4F989 /* CallStartedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallStartedVC.swift; sourceTree = "<group>"; };
+		9D4731C022BD4C2E00C4C28D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		9D70476E222330D700A1A717 /* TimeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeVC.swift; sourceTree = "<group>"; };
+		9D7047712223479100A1A717 /* CallerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallerVC.swift; sourceTree = "<group>"; };
+		9DA5D2F822209C15001C9933 /* FakeCallPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FakeCallPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DA5D2FB22209C15001C9933 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		9DA5D30022209C15001C9933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9DA5D30222209C16001C9933 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9DA5D30522209C16001C9933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9DA5D30722209C16001C9933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DA5D30D2221DD1C001C9933 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9DA5D2F522209C15001C9933 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9D178D7A222DA93300A5CFD5 /* CallAccepted */ = {
+			isa = PBXGroup;
+			children = (
+				9D178D7B222DA96300A5CFD5 /* CallAcceptedVC.swift */,
+			);
+			path = CallAccepted;
+			sourceTree = "<group>";
+		};
+		9D178D7D222DC41C00A5CFD5 /* BlackCall */ = {
+			isa = PBXGroup;
+			children = (
+				9D178D7E222DC43800A5CFD5 /* BlackCallScreenVC.swift */,
+			);
+			path = BlackCall;
+			sourceTree = "<group>";
+		};
+		9D178D80222F07ED00A5CFD5 /* RingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				9D178D82222F080200A5CFD5 /* Marimba.mp3 */,
+				9D178D84222F080200A5CFD5 /* Opening.mp3 */,
+				9D178D81222F080200A5CFD5 /* Reflection.mp3 */,
+				9D178D83222F080200A5CFD5 /* Xylophone.mp3 */,
+			);
+			path = RingFiles;
+			sourceTree = "<group>";
+		};
+		9D178D892230624400A5CFD5 /* Voice */ = {
+			isa = PBXGroup;
+			children = (
+				9D178D8B2230633700A5CFD5 /* voice1.mp3 */,
+				9D178D8D2231ADE600A5CFD5 /* voice2.mp3 */,
+				9D178D8F2231ADF200A5CFD5 /* voice3.mp3 */,
+			);
+			path = Voice;
+			sourceTree = "<group>";
+		};
+		9D24C09A2224117000D4F989 /* RingAndVibVC */ = {
+			isa = PBXGroup;
+			children = (
+				9D24C09B2224119C00D4F989 /* RingAndVibVC.swift */,
+			);
+			path = RingAndVibVC;
+			sourceTree = "<group>";
+		};
+		9D24C09F22246CB000D4F989 /* SelectVoiceVC */ = {
+			isa = PBXGroup;
+			children = (
+				9D24C0A022246D9B00D4F989 /* SetVoice.swift */,
+			);
+			path = SelectVoiceVC;
+			sourceTree = "<group>";
+		};
+		9D24C0C0222B0E2700D4F989 /* CallStarted */ = {
+			isa = PBXGroup;
+			children = (
+				9D24C0C1222B0E5000D4F989 /* CallStartedVC.swift */,
+			);
+			path = CallStarted;
+			sourceTree = "<group>";
+		};
+		9D4731BF22BD4C1000C4C28D /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9D4731C022BD4C2E00C4C28D /* Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		9D70476C2223309900A1A717 /* Main Settings */ = {
+			isa = PBXGroup;
+			children = (
+				9DA5D30D2221DD1C001C9933 /* MainVC.swift */,
+			);
+			path = "Main Settings";
+			sourceTree = "<group>";
+		};
+		9D70476D222330BA00A1A717 /* TimeVC */ = {
+			isa = PBXGroup;
+			children = (
+				9D70476E222330D700A1A717 /* TimeVC.swift */,
+			);
+			path = TimeVC;
+			sourceTree = "<group>";
+		};
+		9D7047702223477500A1A717 /* CallerVC */ = {
+			isa = PBXGroup;
+			children = (
+				9D7047712223479100A1A717 /* CallerVC.swift */,
+			);
+			path = CallerVC;
+			sourceTree = "<group>";
+		};
+		9DA5D2EF22209C15001C9933 = {
+			isa = PBXGroup;
+			children = (
+				9DA5D2FA22209C15001C9933 /* FakeCallPro */,
+				9DA5D2F922209C15001C9933 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9DA5D2F922209C15001C9933 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DA5D2F822209C15001C9933 /* FakeCallPro.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9DA5D2FA22209C15001C9933 /* FakeCallPro */ = {
+			isa = PBXGroup;
+			children = (
+				9D4731BF22BD4C1000C4C28D /* Extensions */,
+				9D178D7D222DC41C00A5CFD5 /* BlackCall */,
+				9D178D7A222DA93300A5CFD5 /* CallAccepted */,
+				9D24C0C0222B0E2700D4F989 /* CallStarted */,
+				9D24C09F22246CB000D4F989 /* SelectVoiceVC */,
+				9D24C09A2224117000D4F989 /* RingAndVibVC */,
+				9D7047702223477500A1A717 /* CallerVC */,
+				9D70476D222330BA00A1A717 /* TimeVC */,
+				9D70476C2223309900A1A717 /* Main Settings */,
+				9D178D80222F07ED00A5CFD5 /* RingFiles */,
+				9D178D892230624400A5CFD5 /* Voice */,
+				9DA5D2FB22209C15001C9933 /* AppDelegate.swift */,
+				9DA5D2FF22209C15001C9933 /* Main.storyboard */,
+				9DA5D30222209C16001C9933 /* Assets.xcassets */,
+				9DA5D30422209C16001C9933 /* LaunchScreen.storyboard */,
+				9DA5D30722209C16001C9933 /* Info.plist */,
+				9D178D912231C31D00A5CFD5 /* DataModel.xcdatamodeld */,
+				9D178D9D2236F51600A5CFD5 /* .gitignore */,
+			);
+			path = FakeCallPro;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9DA5D2F722209C15001C9933 /* FakeCallPro */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9DA5D30A22209C16001C9933 /* Build configuration list for PBXNativeTarget "FakeCallPro" */;
+			buildPhases = (
+				9DA5D2F422209C15001C9933 /* Sources */,
+				9DA5D2F522209C15001C9933 /* Frameworks */,
+				9DA5D2F622209C15001C9933 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FakeCallPro;
+			productName = FakeCallPro;
+			productReference = 9DA5D2F822209C15001C9933 /* FakeCallPro.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9DA5D2F022209C15001C9933 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Ankit Saxena";
+				TargetAttributes = {
+					9DA5D2F722209C15001C9933 = {
+						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = "";
+					};
+				};
+			};
+			buildConfigurationList = 9DA5D2F322209C15001C9933 /* Build configuration list for PBXProject "app 1" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9DA5D2EF22209C15001C9933;
+			productRefGroup = 9DA5D2F922209C15001C9933 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9DA5D2F722209C15001C9933 /* FakeCallPro */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9DA5D2F622209C15001C9933 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D178D86222F080200A5CFD5 /* Marimba.mp3 in Resources */,
+				9DA5D30622209C16001C9933 /* LaunchScreen.storyboard in Resources */,
+				9DA5D30322209C16001C9933 /* Assets.xcassets in Resources */,
+				9DA5D30122209C15001C9933 /* Main.storyboard in Resources */,
+				9D178D85222F080200A5CFD5 /* Reflection.mp3 in Resources */,
+				9D178D902231ADF200A5CFD5 /* voice3.mp3 in Resources */,
+				9D178D9E2236F51600A5CFD5 /* .gitignore in Resources */,
+				9D178D87222F080200A5CFD5 /* Xylophone.mp3 in Resources */,
+				9D178D8E2231ADE600A5CFD5 /* voice2.mp3 in Resources */,
+				9D178D88222F080200A5CFD5 /* Opening.mp3 in Resources */,
+				9D178D8C2230633700A5CFD5 /* voice1.mp3 in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9DA5D2F422209C15001C9933 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DA5D2FC22209C15001C9933 /* AppDelegate.swift in Sources */,
+				9D178D932231C31D00A5CFD5 /* DataModel.xcdatamodeld in Sources */,
+				9DA5D30E2221DD1C001C9933 /* MainVC.swift in Sources */,
+				9D24C0C2222B0E5000D4F989 /* CallStartedVC.swift in Sources */,
+				9D24C0A122246D9B00D4F989 /* SetVoice.swift in Sources */,
+				9D178D7F222DC43800A5CFD5 /* BlackCallScreenVC.swift in Sources */,
+				9D24C09C2224119C00D4F989 /* RingAndVibVC.swift in Sources */,
+				9D70476F222330D700A1A717 /* TimeVC.swift in Sources */,
+				9D7047722223479100A1A717 /* CallerVC.swift in Sources */,
+				9D4731C122BD4C2E00C4C28D /* Extensions.swift in Sources */,
+				9D178D7C222DA96300A5CFD5 /* CallAcceptedVC.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		9DA5D2FF22209C15001C9933 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DA5D30022209C15001C9933 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9DA5D30422209C16001C9933 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9DA5D30522209C16001C9933 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9DA5D30822209C16001C9933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		9DA5D30922209C16001C9933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9DA5D30B22209C16001C9933 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XLRLT47KL;
+				INFOPLIST_FILE = FakeCallPro/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Safe Swype";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ankitatdelhii.FakeCallPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9DA5D30C22209C16001C9933 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3XLRLT47KL;
+				INFOPLIST_FILE = FakeCallPro/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Safe Swype";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.ankitatdelhii.FakeCallPro;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9DA5D2F322209C15001C9933 /* Build configuration list for PBXProject "app 1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DA5D30822209C16001C9933 /* Debug */,
+				9DA5D30922209C16001C9933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9DA5D30A22209C16001C9933 /* Build configuration list for PBXNativeTarget "FakeCallPro" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9DA5D30B22209C16001C9933 /* Debug */,
+				9DA5D30C22209C16001C9933 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		9D178D912231C31D00A5CFD5 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				9D178D922231C31D00A5CFD5 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = 9D178D922231C31D00A5CFD5 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 9DA5D2F022209C15001C9933 /* Project object */;
+}
