@@ -15,8 +15,8 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "9DA5D2F722209C15001C9933"
-               BuildableName = "FakeCallPro.app"
-               BlueprintName = "FakeCallPro"
+               BuildableName = "Safe Swype.app"
+               BlueprintName = "Safe Swype"
                ReferencedContainer = "container:Safe Swype.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -44,8 +44,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9DA5D2F722209C15001C9933"
-            BuildableName = "FakeCallPro.app"
-            BlueprintName = "FakeCallPro"
+            BuildableName = "Safe Swype.app"
+            BlueprintName = "Safe Swype"
             ReferencedContainer = "container:Safe Swype.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
@@ -61,8 +61,8 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "9DA5D2F722209C15001C9933"
-            BuildableName = "FakeCallPro.app"
-            BlueprintName = "FakeCallPro"
+            BuildableName = "Safe Swype.app"
+            BlueprintName = "Safe Swype"
             ReferencedContainer = "container:Safe Swype.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>

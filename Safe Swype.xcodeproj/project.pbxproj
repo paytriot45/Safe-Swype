@@ -49,13 +49,15 @@
 		9D4731C022BD4C2E00C4C28D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		9D70476E222330D700A1A717 /* TimeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeVC.swift; sourceTree = "<group>"; };
 		9D7047712223479100A1A717 /* CallerVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CallerVC.swift; sourceTree = "<group>"; };
-		9DA5D2F822209C15001C9933 /* FakeCallPro.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FakeCallPro.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DA5D2F822209C15001C9933 /* Safe Swype.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Safe Swype.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DA5D2FB22209C15001C9933 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DA5D30022209C15001C9933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9DA5D30222209C16001C9933 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DA5D30522209C16001C9933 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DA5D30722209C16001C9933 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DA5D30D2221DD1C001C9933 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
+		C4BF203B2B7AC56300D07886 /* FakeCallPro copy-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FakeCallPro copy-Info.plist"; path = "/Users/jamalnewton/Documents/GitHub/Safe-Swype/FakeCallPro copy-Info.plist"; sourceTree = "<absolute>"; };
+		C4BF205A2B7AC58400D07886 /* FakeCallPro copy2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "FakeCallPro copy2-Info.plist"; path = "/Users/jamalnewton/Documents/GitHub/Safe-Swype/FakeCallPro copy2-Info.plist"; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,13 +169,15 @@
 			children = (
 				9DA5D2FA22209C15001C9933 /* FakeCallPro */,
 				9DA5D2F922209C15001C9933 /* Products */,
+				C4BF203B2B7AC56300D07886 /* FakeCallPro copy-Info.plist */,
+				C4BF205A2B7AC58400D07886 /* FakeCallPro copy2-Info.plist */,
 			);
 			sourceTree = "<group>";
 		};
 		9DA5D2F922209C15001C9933 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				9DA5D2F822209C15001C9933 /* FakeCallPro.app */,
+				9DA5D2F822209C15001C9933 /* Safe Swype.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -206,9 +210,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		9DA5D2F722209C15001C9933 /* FakeCallPro */ = {
+		9DA5D2F722209C15001C9933 /* Safe Swype */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 9DA5D30A22209C16001C9933 /* Build configuration list for PBXNativeTarget "FakeCallPro" */;
+			buildConfigurationList = 9DA5D30A22209C16001C9933 /* Build configuration list for PBXNativeTarget "Safe Swype" */;
 			buildPhases = (
 				9DA5D2F422209C15001C9933 /* Sources */,
 				9DA5D2F522209C15001C9933 /* Frameworks */,
@@ -218,9 +222,9 @@
 			);
 			dependencies = (
 			);
-			name = FakeCallPro;
+			name = "Safe Swype";
 			productName = FakeCallPro;
-			productReference = 9DA5D2F822209C15001C9933 /* FakeCallPro.app */;
+			productReference = 9DA5D2F822209C15001C9933 /* Safe Swype.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -252,7 +256,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				9DA5D2F722209C15001C9933 /* FakeCallPro */,
+				9DA5D2F722209C15001C9933 /* Safe Swype */,
 			);
 		};
 /* End PBXProject section */
@@ -440,14 +444,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3XLRLT47KL;
+				DEVELOPMENT_TEAM = 7H8863DX4G;
 				INFOPLIST_FILE = FakeCallPro/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Safe Swype";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ankitatdelhii.FakeCallPro;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ankitatdelhii.Safe-Swype";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -459,14 +463,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3XLRLT47KL;
+				DEVELOPMENT_TEAM = 7H8863DX4G;
 				INFOPLIST_FILE = FakeCallPro/Info.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Safe Swype";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.ankitatdelhii.FakeCallPro;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ankitatdelhii.Safe-Swype";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -485,7 +489,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		9DA5D30A22209C16001C9933 /* Build configuration list for PBXNativeTarget "FakeCallPro" */ = {
+		9DA5D30A22209C16001C9933 /* Build configuration list for PBXNativeTarget "Safe Swype" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				9DA5D30B22209C16001C9933 /* Debug */,
