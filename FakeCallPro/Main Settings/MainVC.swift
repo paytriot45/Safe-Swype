@@ -91,7 +91,7 @@ class MainVC: UITableViewController {
     }
     
     func CreateData(){
-        var item = DefSettings(context: self.context)
+        let item = DefSettings(context: self.context)
         item.defTime = defTime.text!
         item.defCaller = defName.text!
         item.defRing = defRing.text!
