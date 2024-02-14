@@ -34,7 +34,7 @@ class CallStartedVC: UIViewController {
             ring = receivedSettings?["defRing"] ?? "Opening"
         }
         else{
-            callerName.text = "Ashish def"
+            callerName.text = "Mom"
         }
     }
     

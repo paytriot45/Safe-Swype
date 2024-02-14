@@ -70,7 +70,7 @@ class CallAcceptedVC: UIViewController {
             callerNameLabel.text = callername
         }
         else{
-            callerNameLabel.text = "Ashish def"
+            callerNameLabel.text = "Mom"
         }
     }
 

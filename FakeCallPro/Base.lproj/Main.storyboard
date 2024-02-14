@@ -12,8 +12,8 @@
         <!--Caller ID-->
         <scene sceneID="tvj-r2-QAh">
             <objects>
-                <viewController title="Caller ID" id="Tjc-cH-oJR" customClass="CallerVC" customModule="FakeCallPro" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" misplaced="YES" id="IaR-W5-7fZ">
+                <viewController title="Caller ID" id="Tjc-cH-oJR" customClass="CallerVC" customModule="Safe_Swype" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="IaR-W5-7fZ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="620"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -96,7 +96,7 @@
         <!--Ring & Vibration-->
         <scene sceneID="m9K-aE-mKx">
             <objects>
-                <tableViewController title="Ring &amp; Vibration" id="S9b-wL-TZH" customClass="RingAndVibVC" customModule="FakeCallPro" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Ring &amp; Vibration" id="S9b-wL-TZH" customClass="RingAndVibVC" customModule="Safe_Swype" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="3At-xc-nfn">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="620"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -264,7 +264,7 @@
         <!--Black Screen-->
         <scene sceneID="RuM-Vs-uWK">
             <objects>
-                <viewController title="Black Screen" id="wYy-cR-dQr" customClass="BlackCallScreenVC" customModule="FakeCallPro" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Black Screen" id="wYy-cR-dQr" customClass="BlackCallScreenVC" customModule="Safe_Swype" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Jlg-1Q-BRQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -307,7 +307,7 @@
         <!--Call Started-->
         <scene sceneID="z4n-gT-CGm">
             <objects>
-                <viewController title="Call Started" id="bdi-J2-WsD" customClass="CallStartedVC" customModule="FakeCallPro" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Call Started" id="bdi-J2-WsD" customClass="CallStartedVC" customModule="Safe_Swype" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tw8-x3-smB">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -537,7 +537,7 @@
         <!--Call AcceptedVC-->
         <scene sceneID="Uvx-i9-Yms">
             <objects>
-                <viewController id="Yf6-We-sME" customClass="CallAcceptedVC" customModule="FakeCallPro" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Yf6-We-sME" customClass="CallAcceptedVC" customModule="Safe_Swype" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="b0j-CJ-DPi">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -652,7 +652,7 @@
         <!--Earpiece Sound-->
         <scene sceneID="ohS-7B-nFI">
             <objects>
-                <viewController title="Earpiece Sound" id="CS0-eE-VfD" customClass="SetVoice" customModule="FakeCallPro" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Earpiece Sound" id="CS0-eE-VfD" customClass="SetVoice" customModule="Safe_Swype" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eW8-zc-qgf">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="620"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -702,7 +702,7 @@
         <!--Safe Swype-->
         <scene sceneID="Lym-Ya-aQm">
             <objects>
-                <tableViewController title="Safe Swype" id="nYn-FI-caE" customClass="MainVC" customModule="FakeCallPro" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Safe Swype" id="nYn-FI-caE" customClass="MainVC" customModule="Safe_Swype" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="100" sectionFooterHeight="18" id="MGw-r3-DHO">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -956,7 +956,7 @@
         <!--Time-->
         <scene sceneID="FG9-Fr-Lut">
             <objects>
-                <tableViewController title="Time" id="NwK-Wc-3pJ" customClass="TimeVC" customModule="FakeCallPro" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController title="Time" id="NwK-Wc-3pJ" customClass="TimeVC" customModule="Safe_Swype" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="dl6-Z9-QuX" userLabel="timeTableView">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="620"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
